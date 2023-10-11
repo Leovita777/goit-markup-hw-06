@@ -36,9 +36,12 @@ img {
 .container {
   width: 100%;
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+  /* style desktop */
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 /* ===== HEADER ===== */
@@ -207,7 +210,9 @@ header {
 
 /* +++++ Container2 +++++ */
 .desc {
-  padding: 120px 0;
+  padding: 96px 0;
+/* style desktop */
+  /* padding: 120px 0; */
 }
 
 .visually-hidden {
@@ -225,16 +230,21 @@ header {
 
 .desc-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-wrap: wrap;
+/* style desktop */
+  /* gap: 24px; */
 }
 
 .desc-list-item {
-  width: calc((100% - 24px * 3) / 4);
+  max-width: 288px;
   border-radius: 4px;
   border: 1px;
+  /* style desktop */
+  /* width: calc((100% - 24px * 3) / 4); */
 }
 
-.desc-icons-wrap {
+/* .desc-icons-wrap {
   height: 112px;
   border: solid 1px #8E8F99;
   border-radius: 4px;
@@ -243,18 +253,22 @@ header {
   justify-content: center;
   background-color: #F4F4FD;
   margin-bottom: 8px;
-}
+} */
 
 .desc-icons {
 }
 
 .desc-list-subject {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
+  color: #2E2F42;
+  margin-bottom: 8px; 
+  /* style desktop */
+  /* font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; */
 }
 
 .desc-list-text {
@@ -830,5 +844,55 @@ fill: #4D5AE5;
   border: none;
 }
 
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
 
+  .desc-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .desc {
+    padding: 120px 0;
+  }
+  
+  .desc-list {
+    gap: 24px;
+  }
+  
+  .desc-list-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+  
+  /* .desc-icons-wrap {
+    height: 112px;
+    border: solid 1px #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    margin-bottom: 8px;
+  } */
+  
+  .desc-list-subject {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
