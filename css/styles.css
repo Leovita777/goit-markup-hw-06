@@ -159,10 +159,14 @@ header {
 }
 
 .quote {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background: #2e2f42;
-  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-image: 
+  linear-gradient(to bottom, 
+  rgba(46, 47, 66, 0.7), 
+  rgba(46, 47, 66, 0.7)), 
+  url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -170,16 +174,32 @@ header {
   margin: 0 auto;
 }
 
+/* MOBILE */
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+  .quote {
+    background-image: 
+    linear-gradient(to bottom, 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-mob-2x.jpg);
+  }
+}
+
+
+
 .quote-title {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  max-width: 496px;
+  max-width: 288px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .quote-btn {
@@ -438,6 +458,7 @@ header {
 }
 
 .foot-wrap {
+  text-align: center;
 }
 
 .foot-link {
@@ -463,6 +484,7 @@ header {
   color: #f4f4fd;
   max-width: 264px;
   margin-bottom: 72px;
+  text-align: left;
 }
 
 .foot-menu-box {
@@ -475,12 +497,14 @@ header {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .foot-menu-social {
   display: flex;
   gap: 16px;
   margin-bottom: 72px;
+  justify-content: center;
 }
 
 .foot-item-social {
@@ -512,12 +536,11 @@ header {
 /*======= FOOT FORM =======*/
 
 .foot-form-wrap {
-  
+  margin-left: auto;
 }
 
 .foot-form {
-  /* display: block; */
-
+  text-align: center;
 }
 
 .foot-form-text {
@@ -529,6 +552,7 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .foot-input {
@@ -539,7 +563,7 @@ header {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   outline: transparent;
   background-color: transparent;
-  padding: 8px 212px 8px 16px;
+  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -562,7 +586,7 @@ header {
   min-width: 165px;
   height: 40px;
   display: inline-flex;
-  padding: 8px 24px;
+  padding: 8px 16px 8px 24px;
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -578,10 +602,17 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.foot-form-btn:hover,
+.foot-form-btn:focus {
+  background-color: #404bbf;
+}
+
+
 .foot-icon {
-  margin-left: 16px;
+  
 }
 
 
@@ -701,6 +732,10 @@ header {
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .modal-input:focus,
@@ -756,8 +791,8 @@ fill: #4D5AE5;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check {
-
+.modal-check:focus +.modal-check-text >.modal-check-box {
+  border-color: #4D5AE5;
 }
 
 .modal-check:checked + .modal-check-text > .modal-check-box {
@@ -801,6 +836,10 @@ fill: #4D5AE5;
   color: #4D5AE5;
 }
 
+.modal-check-link:hover {
+  text-decoration: underline;
+}
+
 .modal-form-btn {
   display: block;
   margin: 0 auto;
@@ -827,9 +866,44 @@ fill: #4D5AE5;
   border: none;
 }
 
+
+
+/*===== TABLET =====*/
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .quote {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: 
+    linear-gradient(to bottom, 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi), 
+  (min-resolution: 2dppx) {
+    .quote {
+      background-image: 
+      linear-gradient(to bottom, 
+      rgba(46, 47, 66, 0.7), 
+      rgba(46, 47, 66, 0.7)), 
+      url(../images/people-office-tab-2x.jpg);
+    }
+  }
+
+  .quote-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 36px;
   }
 
   .desc-list-item {
@@ -837,8 +911,12 @@ fill: #4D5AE5;
     text-align: left;
   }
 
+  .container.team.container {
+    max-width: 584px;
+  }
+
   .team-list {
-    gap: 64px;
+    gap: 64px 24px;
   }
 
   .team-list-item {
@@ -857,18 +935,34 @@ fill: #4D5AE5;
   .foot-container {
     display: flex;
     align-items: baseline;
+    max-width: 584px;
+    flex-wrap: wrap;
   }
 
   .foot-wrap {
     margin-right: 24px;
+    text-align: left;
   }
 
   .foot-form-wrap {
   }
 
+  .foot-menu-name {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .foot-menu-social {
+    justify-content: left;
+  }
+
   .foot-form {
     display: flex;
     gap: 24px;
+  }
+
+  .foot-form-text {
+    text-align: left;
   }
 
   .foot-input {
@@ -877,13 +971,40 @@ fill: #4D5AE5;
 }
 
 /* =====DESKTOP===== */
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .quote {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: 
+    linear-gradient(to bottom, 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office.jpg);
+  }
   
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi), 
+  (min-resolution: 2dppx) {
+    .quote {
+      background-image: 
+      linear-gradient(to bottom, 
+      rgba(46, 47, 66, 0.7), 
+      rgba(46, 47, 66, 0.7)), 
+      url(../images/people-office-2x.jpg);
+    }
+  }
+
+  .quote-title {
+    margin-bottom: 48px;
+  }
+
   .desc {
     padding: 120px 0;
   }
@@ -918,6 +1039,10 @@ fill: #4D5AE5;
     padding: 120px 0;
   }
 
+  .container.team.container {
+    max-width: 1159px;
+  }
+
   .team-list {
     gap: 24px;
   }
@@ -947,6 +1072,8 @@ fill: #4D5AE5;
   .foot-container {
     display: flex;
     align-items: baseline;
+    max-width: 1159px;
+    flex-wrap: nowrap;
   }
 
   .foot-wrap {
