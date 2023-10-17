@@ -137,7 +137,7 @@ header {
 }
 
 .adrs-menu-link {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1073,12 +1073,13 @@ header {
   }
 
   .adrs-menu-item:first-child {
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
 
   .adrs-menu-link {
     font-size: 12px;
     line-height: 1.16;
+    font-weight: 400;
     letter-spacing: 0.04em;
     color: #434455;
     display: block;
