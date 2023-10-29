@@ -89,9 +89,6 @@ header {
   display: none;
 }
 
-.nav-menu-item {
-}
-
 .nav-menu-link {
   font-size: 16px;
   font-weight: 500;
@@ -131,9 +128,6 @@ header {
 
 .adrs-menu {
   display: none;
-}
-
-.adrs-menu-item {
 }
 
 .adrs-menu-link {
@@ -238,9 +232,6 @@ header {
   fill: #ffffff;
 }
 
-.head-mob-nav-menu {
-}
-
 .mob-nav-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -261,8 +252,6 @@ header {
 .mob-adrs {
   margin-bottom: 48px;
   font-style: normal;
-}
-.mob-adrs-menu {
 }
 
 .mob-adrs-menu-item {
@@ -321,8 +310,6 @@ header {
 
 /* ===== MAIN ===== */
 /* +++++ Container1 +++++ */
-.content {
-}
 
 .quote {
   padding-top: 72px;
@@ -423,9 +410,6 @@ header {
 
 .desc-icons-wrap {
   display: none;
-}
-
-.desc-icons {
 }
 
 .desc-list-subject {
@@ -575,9 +559,6 @@ header {
   overflow: hidden;
 }
 
-.portfolio-list-item-picture {
-}
-
 .portfolio-cover-text {
   position: absolute;
   height: 100%;
@@ -620,9 +601,6 @@ header {
   background: #2e2f42;
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-.foot-container {
 }
 
 .foot-wrap {
@@ -780,9 +758,6 @@ header {
 .foot-form-btn:hover,
 .foot-form-btn:focus {
   background-color: #404bbf;
-}
-
-.foot-icon {
 }
 
 /*======= MODAL FORM =======*/
@@ -996,9 +971,6 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.modal-check-icon {
 }
 
 .modal-check-link {
